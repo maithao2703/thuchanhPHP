@@ -18,7 +18,6 @@ if (isset($_POST['so_dau']) && isset($_POST['so_cuoi'])) {
     }
 }
 
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -51,25 +50,25 @@ if (isset($_POST['so_dau']) && isset($_POST['so_cuoi'])) {
             <tr>
                 <td>Tổng các số</td>
                 <td colspan="4"><label for="textfield4"></label>
-                    <input type="text" name="tong" id="textfield4" value="<?php if(isset($tong_cac_so)) echo $tong_cac_so?>" />
+                    <input type="text" name="tong" id="textfield4" value="<?php if (isset($tong_cac_so)) echo $tong_cac_so ?>" />
                 </td>
             </tr>
             <tr>
                 <td>Tích các số</td>
                 <td colspan="4"><label for="textfield5"></label>
-                    <input type="text" name="tich" id="textfield5" value="<?php if(isset($tich))echo $tich ?>" />
+                    <input type="text" name="tich" id="textfield5" value="<?php if (isset($tich)) echo $tich ?>" />
                 </td>
             </tr>
             <tr>
                 <td>Tổng các số chẵn</td>
                 <td colspan="4"><label for="textfield6"></label>
-                    <input type="text" name="tong_chan" id="textfield6" value="<?php if(isset($tong_so_chan)) echo $tong_so_chan?> " />
+                    <input type="text" name="tong_chan" id="textfield6" value="<?php if (isset($tong_so_chan)) echo $tong_so_chan ?> " />
                 </td>
             </tr>
             <tr>
                 <td>Tổng các số lẻ</td>
                 <td colspan="4"><label for="textfield7"></label>
-                    <input type="text" name="tong_le" id="textfield7" value="<?php if (isset($tong_so_le)) echo $tong_so_le?>" />
+                    <input type="text" name="tong_le" id="textfield7" value="<?php if (isset($tong_so_le)) echo $tong_so_le ?>" />
                 </td>
             </tr>
             <tr>
