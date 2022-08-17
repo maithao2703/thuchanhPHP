@@ -1,9 +1,5 @@
 <?php
-if (isset($_POST['a']) && isset($_POST['b']) && isset($_POST['c'])) {
-    $a = $_POST['a'];
-    $b = $_POST['b'];
-    $c = $_POST['c'];
-
+function giai_phuong_trinh($a, $b, $c) {
     $delta = $b * $b - 4 * $b * $c;
     if ($delta < 0) {
         $ket_qua = "phuong trinh vo nghiem";
@@ -15,6 +11,15 @@ if (isset($_POST['a']) && isset($_POST['b']) && isset($_POST['c'])) {
         $x2 = (-$b - sqrt($delta)) / (2 * $a);
         $ket_qua = "x1 = " . $x1 . ", x2 = " . $x2;
     }
+
+    return $ket_qua;
+}
+if (isset($_POST['a']) && isset($_POST['b']) && isset($_POST['c'])) {
+    $a = $_POST['a'];
+    $b = $_POST['b'];
+    $c = $_POST['c'];
+
+    $ket_qua = giai_phuong_trinh($a, $b, $c);
 }
 
 
